@@ -1,1 +1,51 @@
-<p>user-detail works!</p>
+<div class="detail-page" *ngIf="!loading && user">
+    <button
+      pButton
+      type="button"
+      label="Back to users"
+      icon="pi pi-arrow-left"
+      class="back-button"
+      (click)="goBack()"
+    ></button>
+  
+    <p-card class="detail-card">
+      <h2>{{ user.name }}</h2>
+      <p class="username">{{ user.username }}</p>
+  
+      <div class="detail-row">
+        <span class="label">Email:</span>
+        <span>{{ user.email }}</span>
+      </div>
+  
+      <div class="detail-row">
+        <span class="label">Phone:</span>
+        <span>{{ user.phone }}</span>
+      </div>
+  
+      <div class="detail-row">
+        <span class="label">Website:</span>
+        <span>{{ user.website }}</span>
+      </div>
+  
+      <div class="detail-row">
+        <span class="label">Address:</span>
+        <span>
+          {{ user.address.street }},
+          {{ user.address.suite }},
+          {{ user.address.city }}
+          {{ user.address.zipcode }}
+        </span>
+      </div>
+  
+      <div class="detail-row">
+        <span class="label">Company:</span>
+        <span>
+          {{ user.company.name }} –
+          "{{ user.company.catchPhrase }}"
+        </span>
+      </div>
+    </p-card>
+  </div>
+  
+  <p *ngIf="loading">Loading user detail...</p>
+  

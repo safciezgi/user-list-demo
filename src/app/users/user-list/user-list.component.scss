@@ -1,0 +1,52 @@
+.page {
+    padding: 2rem;
+  }
+  
+  .page-title {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #424242;
+  }
+  
+  .toolbar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .user-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1rem;
+  }
+  
+  .user-card {
+    height: 100%;
+  }
+  
+  .user-card-content {
+    color: #504f4f;
+  }
+  
+  .user-card-content h3 {
+    margin: 0 0 0.25rem 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #4b5563;
+  }
+  
+  .username {
+    color: #666;
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .field-row {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+  }
+  
